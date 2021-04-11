@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+ <meta  http-equiv="Content-Type"  content="text/html;charset=utf-8"/> 
+ <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Sample01 - dashboard</title>
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="../fontawesome-free-5.13.0-web/css/all.css">
+  <link rel="stylesheet" type="text/css" href="../css/style.css" />
+  <script type="text/javascript" src="../js/jquery-1.9.1.min.js"></script>
+  <script type="text/javascript" src="../js/com_ui.js"></script> 
+</head>
+
+<body>
+
+<div class="wrap">
+	<div class="Dash_body">
+
+		<header>
+			<div class="header_in">
+				<div class="header_left">
+					<h1 class="logo biglogo">
+						<a href="../dash/dashboard.html"><img src="../images/logo_name1.png" /></a>
+					</h1>
+					<p class="btn_trans"></p>
+				</div><!-- header_left -->
+
+				<div class="header_right">
+					<div class="right_div btbox">
+						<a class="go_right btn_togg">
+							<i class="fas fa-user-circle"></i>
+							<span class="user">
+								홍길동님 환영합니다.
+							</span>
+						</a>
+					</div><!-- right_div -->
+					<div class="right_div">
+						<button type="button" class="btn btn-yg1" onclick="location.href='../index.html'">로그아웃</button>
+					</div>
+				</div><!-- header_right -->
+			</div><!-- header_in -->
+		</header>
+
+		<aside class="dash_aside">
+			<div class="side_conts">
+				<h2 class="left_name">MENU</h2>
+				<ul class="left_menu">
+					<li>
+						<a class="selb_link" href="../dash/dashboard.html">
+							<img src="../images/sv_dash.svg" />
+							<span class="menu_name">대시보드</span>
+						</a>
+					</li>
+					<li>
+						<a class="selb_link" href="../control/real_control.html">
+							<img src="../images/sv_time.svg" />
+							<span class="menu_name">실시간 관제</span>
+						</a>
+					</li>
+					<li>
+						<a class="selb_link" href="../manage/drive.html">
+							<img src="../images/sv_car.svg" />
+							<span class="menu_name">운행이력 관리</span>
+						</a>
+					</li>
+					<li>
+						<a class="selb_link">
+							<img src="../images/sv_manage.svg" />
+							<span class="menu_name">관리메뉴</span>
+							<i class="fas fa-chevron-right"></i>
+						</a>
+						<div class="add_menu">
+							<a href="../manage/user.html">사용자 관리</a>
+							<a href="../manage/poll.html">설문조사 관리</a>
+							<a href="../manage/cars.html">차량 관리</a>
+							<a href="../manage/area.html">운행지역 관리</a>
+							<a href="../manage/api.html">API 관리</a>
+						</div>
+					</li>
+					<li>
+						<a class="selb_link" href="../set/notice.html">
+							<img src="../images/sv_notice.svg" />
+							<span class="menu_name">공지사항</span>
+						</a>
+					</li>
+					<li>
+						<a class="selb_link">
+							<img class="icon_set" src="../images/sv_set.svg" />
+                            <span class="menu_name">설정</span>
+                            <i class="fas fa-chevron-right"></i>
+                        </a>
+                        <div class="add_menu">
+							<a href="../set/settings.html">코드관리</a>
+							<a href="../set/message.html">메세지관리</a>
+						</div>
+					</li>
+				</ul><!-- left_menu -->
+			</div><!-- side_conts -->
+		</aside><!-- dash_aside -->
+
+		<section class="top_line">
+			<div class="jfbet">
+				<h2 class="top_title control_title">
+					코드관리
+					<div class="time_explain">
+                        <p class="call">최종접속시간</p>
+                        <p class="time_box">
+                            <span class="timer">2020-07-09 22:25:30</span>
+                        </p>
+					</div>
+				</h2>
+				<div class="location">
+					<p>
+						<img class="ion" src="../images/sv_home.svg" />Home
+					</p>
+					<p class="arrow">
+						<img src="../images/sv_arr_loc.svg" />
+					</p>
+                    <p>설정</p>
+                    <p class="arrow">
+						<img src="../images/sv_arr_loc.svg" />
+					</p>
+                    <p>코드관리</p>
+				</div><!--location-->
+			</div>
+		</section><!-- top_line -->
+
+		<section class="content">
+            <div class="row">
+				<div class="col-lg-12">
+					<dl class="dsconts">
+						<dt>
+							<article class="jfbet">
+								<h3>
+									<span class="hormark"></span>
+									<span class="htitle">코드 리스트</span>
+								</h3>
+							</article>
+						</dt>
+						<dd>
+							<article class="jfbet m-b-10">
+                                <div class="betw_left m-t-5">
+                                    <select class="form-control selbox slmr1 w150">
+										<option value="" selected>10개씩 보기</option>
+										<option value="">15개씩 보기</option>
+										<option value="">20개씩 보기</option>
+                                    </select>
+                                </div><!--betw_left-->
+                                <div class="betw_right m-t-5">
+                                    <div class="flx_aicent">
+										<input type="text" class="form-control fomr1 w280" placeholder="">
+										<button class="btn btn-primary btmr1 m-l-5">검색</button>
+                                    </div><!--flx_aicent-->
+                                </div><!--betw_right-->
+                            </article><!-- jfbet -->
+							<article class="chart_body m-t-15 m-b-15">
+								<div class="table_box">
+									<table class="gray_table bigger_table">
+										<thead>
+											<tr>
+												<th>번호</th>
+												<th>서비스 종류</th>
+												<th>운행목적</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>1</td>
+												<td>
+                                                    <select class="form-control w200 m-l-a m-r-a">
+                                                        <option value="" selected>공공기관용</option>
+                                                        <option value="">행정지원용</option>
+                                                    </select>
+                                                </td>
+												<td>
+                                                    <input type="text" class="form-control w300 m-l-a m-r-a" value="기관업무 목적">
+                                                </td>
+                                            </tr>
+                                            <tr>
+												<td>2</td>
+												<td>
+                                                    <select class="form-control w200 m-l-a m-r-a">
+                                                        <option value="">공공기관용</option>
+                                                        <option value="" selected>행정지원용</option>
+                                                    </select>
+                                                </td>
+												<td>
+                                                    <input type="text" class="form-control w300 m-l-a m-r-a" value="교통약자 이동지원">
+                                                </td>
+                                            </tr>
+                                            <tr>
+												<td>3</td>
+												<td>
+                                                    <select class="form-control w200 m-l-a m-r-a">
+                                                        <option value="" selected>공공기관용</option>
+                                                        <option value="">행정지원용</option>
+                                                    </select>
+                                                </td>
+												<td>
+                                                    <input type="text" class="form-control w300 m-l-a m-r-a" value="기관업무 목적">
+                                                </td>
+                                            </tr>
+                                            <tr>
+												<td>4</td>
+												<td>
+                                                    <select class="form-control w200 m-l-a m-r-a">
+                                                        <option value="">공공기관용</option>
+                                                        <option value="" selected>행정지원용</option>
+                                                    </select>
+                                                </td>
+												<td>
+                                                    <input type="text" class="form-control w300 m-l-a m-r-a" value="교통약자 이동지원">
+                                                </td>
+                                            </tr>
+                                            <tr>
+												<td>5</td>
+												<td>
+                                                    <select class="form-control w200 m-l-a m-r-a">
+                                                        <option value="" selected>공공기관용</option>
+                                                        <option value="">행정지원용</option>
+                                                    </select>
+                                                </td>
+												<td>
+                                                    <input type="text" class="form-control w300 m-l-a m-r-a" value="기관업무 목적">
+                                                </td>
+                                            </tr>
+                                            <tr>
+												<td>6</td>
+												<td>
+                                                    <select class="form-control w200 m-l-a m-r-a">
+                                                        <option value="">공공기관용</option>
+                                                        <option value="" selected>행정지원용</option>
+                                                    </select>
+                                                </td>
+												<td>
+                                                    <input type="text" class="form-control w300 m-l-a m-r-a" value="교통약자 이동지원">
+                                                </td>
+                                            </tr>
+                                            <tr>
+												<td>7</td>
+												<td>
+                                                    <select class="form-control w200 m-l-a m-r-a">
+                                                        <option value="" selected>공공기관용</option>
+                                                        <option value="">행정지원용</option>
+                                                    </select>
+                                                </td>
+												<td>
+                                                    <input type="text" class="form-control w300 m-l-a m-r-a" value="기관업무 목적">
+                                                </td>
+                                            </tr>
+                                            <tr>
+												<td>8</td>
+												<td>
+                                                    <select class="form-control w200 m-l-a m-r-a">
+                                                        <option value="">공공기관용</option>
+                                                        <option value="" selected>행정지원용</option>
+                                                    </select>
+                                                </td>
+												<td>
+                                                    <input type="text" class="form-control w300 m-l-a m-r-a" value="교통약자 이동지원">
+                                                </td>
+                                            </tr>
+                                            <tr>
+												<td>9</td>
+												<td>
+                                                    <select class="form-control w200 m-l-a m-r-a">
+                                                        <option value="" selected>공공기관용</option>
+                                                        <option value="">행정지원용</option>
+                                                    </select>
+                                                </td>
+												<td>
+                                                    <input type="text" class="form-control w300 m-l-a m-r-a" value="기관업무 목적">
+                                                </td>
+                                            </tr>
+                                            <tr>
+												<td>10</td>
+												<td>
+                                                    <select class="form-control w200 m-l-a m-r-a">
+                                                        <option value="">공공기관용</option>
+                                                        <option value="" selected>행정지원용</option>
+                                                    </select>
+                                                </td>
+												<td>
+                                                    <input type="text" class="form-control w300 m-l-a m-r-a" value="교통약자 이동지원">
+                                                </td>
+                                            </tr>
+										</tbody>
+                                    </table>
+
+									<div class="tar m-t-15">
+										<button type="button" class="btn btn-info btmr2 w130">
+											수정
+										</button>
+									</div>
+                                    <div class="paging_zone p-t-10 p-b-10">
+                                        <a class="prev"><i class="fas fa-caret-left"></i></a>
+                                        <a class="ondid">1</a>
+                                        <a>2</a>
+                                        <a>3</a>
+                                        <a>4</a>
+                                        <a>5</a>
+                                        <a>6</a>
+                                        <a>7</a>
+                                        <a>8</a>
+                                        <a>9</a>
+                                        <a>10</a>
+                                        <a class="next"><i class="fas fa-caret-right"></i></a>
+                                    </div><!--paging_zone-->
+								</div><!--table_box-->		
+							</article><!-- chart_body -->
+						</dd>
+					</dl><!-- dsconts -->
+				</div><!-- col-lg-12 -->
+            </div><!-- row -->
+            
+        </section><!--content-->
+
+	</div><!-- Dash_body -->
+</div><!-- wrap -->
+
+</body>
+
+ </html>
